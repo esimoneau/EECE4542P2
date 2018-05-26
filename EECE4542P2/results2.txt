@@ -1,1 +1,4 @@
 
+
+
+Compared to the previously used exhaustive search, greedy algorithm produces much better results much faster. This can easily be seen from the output files, where conflicts numbered in the thousands for the 192 node map when exhaustive search was used. Using greedy algorithm, the timer wasn't even necessary as the program finished running in under a minute. The program uses a for loop to iterate over all the nodes. At each node, another for loop iterates over the adjacent node to figure out what color will produce the least amount of conflicts and assigns the color to the node. Thus the best case runtime is O(n) and the worst case runtime, if every node were connected to every other node, would be O(n^2). Though this algorithm is much more efficient, it is not guranteed to produce the optimal result, exhaustive search would if given infinite time to run.  
